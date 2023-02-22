@@ -10,7 +10,7 @@ const firebaseApp = initializeApp({
   appId: "1:105319589520:web:3f1f1ed66cd2edab491a15",
   measurementId: "G-M0DC48G621"
 });
-const isSignedIn = false;
+let isSignedIn = false;
 const auth = getAuth(firebaseApp);
 onAuthStateChanged(auth, user => {
   if (user != null) {
@@ -23,7 +23,7 @@ onAuthStateChanged(auth, user => {
 const form = document.querySelector('#loginForm');
 form['submitButton'].addEventListener("click", (e) => {
   const email = form['email'].value;
-  const password = form['password'].value;
+  const password = form['pass'].value;
   if (!isSignedIn) {
     signInWithEmailAndPassword(auth, email, password).then(cred =>{
       console.log(cred);

@@ -3,10 +3,14 @@ const path = require('path')
 module.exports = {
     mode : 'development',
     devtool : 'eval-source-map',
-    entry : './src/signuppage.js',
+    entry : {
+        login : './src/loginpage.js',
+        signup : './src/signuppage.js'
+    },
     output: {
-        path : path.resolve(__dirname, 'dist'),
-        filename : 'bundle.js'
+        filename : '[name].js',
+        path : __dirname + '/dist'
+        
     },
     watch: true
 }
