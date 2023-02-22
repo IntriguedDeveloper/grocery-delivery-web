@@ -5,7 +5,7 @@
   "name": "grocery-delivery-web",
   "description": "grocery deliver",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "loginpage.js",
   "devDependencies": {
     "webpack": "^5.75.0",
     "webpack-cli": "^5.0.1"

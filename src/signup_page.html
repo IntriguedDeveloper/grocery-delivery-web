@@ -1,51 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="signup_page.css" />
-    <title>Sign Up</title>
-  </head>
-  <body>
-    <div id="container">
-      <div id="SignUpDiv">
-        <h1>Sign Up</h1>
-        <div id="FormDiv">
-          <form id="Sign">
-            <input
-              type="text"
-              id="name"
-              placeholder="Enter your name"
-              required
-            />
 
-            <input
-              type="text"
-              id="user_name"
-              placeholder="Enter your Username"
-              required
-            />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="signup_page.css" />
+  <title>Sign Up</title>
+</head>
 
-            <input
-              type="email"
-              id="Email"
-              placeholder="Enter you email id"
-              required
-            />
+<body>
+  <div id="container">
+    <div id="signUpDiv">
+      <h1>Sign Up</h1>
+      <div id="FormDiv">
+        <form id="sign">
+          <input type="text" id="name" placeholder="Enter your name" required />
 
-            <input
-              type="password"
-              id="Password"
-              placeholder="Enter your password"
-              required
-            />
 
-                <input type="button" id="SignUpButton"value="Sign Up">
+
+          <input type="email" id="Email" placeholder="Enter you email id" required />
+
+          <input type="password" id="Password" placeholder="Enter your password" required />
+
+          <input type="button" id="signUpButton" value="Sign Up"/>
+
         </form>
-        </div>
-        <div id="options">
-          <a id="loginOption">Already have an account? Login</a>
-    </div>
-  </body>
+      </div>
+      <div id="options">
+        <a id="loginOption">Already have an account? Login</a>
+      </div>
+      <script src="/dist/bundle.js"></script>
+</body>
+
 </html>
