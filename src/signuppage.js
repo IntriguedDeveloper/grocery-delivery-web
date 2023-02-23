@@ -12,13 +12,25 @@ const firebaseApp = initializeApp({
 })
 const auth = getAuth(firebaseApp);
 const sign = document.querySelector('#sign');
-sign['signUpButton'].addEventListener('click', (e)=>{
-    
+sign['signUpButton'].addEventListener('click', (e) => {
+
     const email = sign['Email'].value;
     const password = sign['Password'].value;
-    createUserWithEmailAndPassword(auth, email, password).then(cred => { //userSignedIn
-        console.log(cred);
-    }).catch(error =>{
-        
-    });
+    const errormsg = document.querySelector("#errormsg");
+   
+        createUserWithEmailAndPassword(auth, email, password).then(cred => { //userSignedIn
+            console.log(cred);
+        }).catch(error => {
+            console.log(error.code);
+            if(error.code == 'auth/invalid-email'){
+                errormsg.innerHTML = "The email is Invalid!"
+            }
+            else if(error.code == "auth/weak-password"){
+                errormsg.innerHTML = "Weak Password !"
+            }
+            else if(error.code = "auth/email-already-in-use"){
+                errormsg.innerHTML = "Email already in use, choose another one!"
+            }
+        });
+    
 });

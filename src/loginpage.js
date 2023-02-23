@@ -25,8 +25,15 @@ form['submitButton'].addEventListener("click", (e) => {
   const email = form['email'].value;
   const password = form['pass'].value;
   if (!isSignedIn) {
-    signInWithEmailAndPassword(auth, email, password).then(cred =>{
-      console.log(cred);
-    })
+    signInWithEmailAndPassword(auth, email, password)
+  .then((userCredential) => {
+    // Signed in 
+    const user = userCredential.user;
+    
+  })
+  .catch((error) => {
+    const errorCode = error.code;
+    const errorMessage = error.message;
+  });
   }
 })
