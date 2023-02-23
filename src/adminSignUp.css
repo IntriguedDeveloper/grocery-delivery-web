@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:ital@1&display=swap');
+
+
+html, body{
+    min-height: 100vh;
+    overflow: auto;
+    margin: 0%;
+    background-image: url(https://i.ibb.co/XYt8r5t/pots-vegetables-harvest.jpg);
+    background-size: cover;
+}
+
+#container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 90vh;
+    width: 100%;
+}
+
+.admin{
+    background-color: rgba(72, 91, 91, 0.2);
+    width: 600px;
+    height: 720px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 20px;
+}
+
+.admin h1{
+    font-size: 50px;
+    color: antiquewhite;
+    font-family:'Shantell Sans', cursive; ;
+    margin: 0%;
+    margin-bottom: 30px;
+    margin-top: 70px;
+}
+
+.adminForm{
+    height:400px;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+}
+
+#AdminForm{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    row-gap: 30px;
+}
+
+#AdminForm *{
+    display: block;
+    width: 300px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Shantell Sans', cursive;;
+}
+
+#AdminForm input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+
+#searchBar{
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    font-family: 'Shantell Sans', cursive;;
+    background-color:  rgb(206, 206, 179);;
+    font-size: medium;
+    position: relative;
+    left: 67%;
+}
+
+#searchBar:hover{
+    background-color: rgb(174, 174, 154);
+    cursor: pointer;
+    border: none;
+}
+
+#searchBar:active{
+    background-color:rgb(206, 206, 179);
+    border: none;
+}
+
+#searchBar:visited{
+    background-color:rgb(206, 206, 179);
+    border: none;
+}
+
