@@ -42,8 +42,10 @@ html, body{
     width: 300px;
     height: max-content;
     display: flex;
-    align-items: stretch;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
+    text-align: center;
 }
 
 #formDiv form {
@@ -94,4 +96,10 @@ html, body{
 #options *:hover{
     cursor: pointer;
     color: aliceblue;
+}
+#errormsg{
+    
+    margin-top : 10px;
+    font-family: 'Shantell Sans',cursive;;
+    color: rgb(206, 206, 179);
 }

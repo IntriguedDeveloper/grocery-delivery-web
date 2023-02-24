@@ -21,19 +21,20 @@ onAuthStateChanged(auth, user => {
   }
 });
 const form = document.querySelector('#loginForm');
-form['submitButton'].addEventListener("click", (e) => {
+form['submitButton'].addEventListener('click', (e) => {
   const email = form['email'].value;
   const password = form['pass'].value;
+  console.log(isSignedIn);
+ 
   if (!isSignedIn) {
     signInWithEmailAndPassword(auth, email, password)
-  .then((userCredential) => {
-    // Signed in 
-    const user = userCredential.user;
-    
-  })
-  .catch((error) => {
-    const errorCode = error.code;
-    const errorMessage = error.message;
-  });
+      .then((userCredential) => {
+        // Signed in 
+        const user = userCredential.user;
+        console.log("Logged In")
+      })
+      .catch((error) => {
+        console.log(error.code);
+      });
   }
 })

@@ -4,8 +4,8 @@ module.exports = {
     mode : 'development',
     devtool : 'eval-source-map',
     entry : {
-        login : './src/loginpage.js',
-        signup : './src/signuppage.js'
+        login : './public/auth/loginpage.js',
+        signup : './public/auth/signuppage.js'
     },
     output: {
         filename : '[name].js',
