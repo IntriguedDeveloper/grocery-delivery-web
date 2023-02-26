@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:ital@1&display=swap');
+
+
+html,
+body {
+    min-height: 100vh;
+    overflow: auto;
+    margin: 0%;
+    background-image: url(https://i.ibb.co/XYt8r5t/pots-vegetables-harvest.jpg);
+    background-size: cover;
+
+}
+
+#container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#adminLoginDiv{
+    width: 600px;
+    height: 100vh;
+    background-color: rgba(0, 219, 222, 0.2);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    row-gap: 30px;
+}
+
+#adminLoginDiv h1{
+    font-family:'Shantell Sans', cursive; ;
+    font-size: 50px;
+    color: antiquewhite;
+    margin: 0;
+}
+#adminLoginDiv form {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+    align-items: stsubmit;
+    justify-content: center;
+}
+#adminLoginDiv form input{
+    height: 30px;
+    border-radius: 3px;
+    border : none;
+}
+#submit{
+    border-radius: 5px;
+    color:rgb(79, 64, 46);
+    background-color: rgb(206, 206, 179);
+    height : 30px;
+    border:none;
+    font-size: medium;
+    font-weight: 200;
+    font-family: 'Shantell Sans', cursive;;
+}
+#submit:hover{
+    background-color: rgb(174, 174, 154);
+    cursor : pointer;
+}
+#submit:active{
+    background-color: rgb(206, 206, 179);
+}
+#submit:visited{
+    background-color:rgb(206, 206, 179);
+}
