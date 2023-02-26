@@ -5,7 +5,8 @@ module.exports = {
     devtool : 'eval-source-map',
     entry : {
         login : './public/auth/loginpage.js',
-        signup : './public/auth/signuppage.js'
+        signup : './public/auth/signuppage.js',
+        adminSignUp : './src/adminSignUp.js',
     },
     output: {
         filename : '[name].js',

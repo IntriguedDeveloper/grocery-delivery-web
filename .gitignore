@@ -104,3 +104,4 @@ dist
 .tern-port
 
  ./src/service-account-key.json
+./node_modules
