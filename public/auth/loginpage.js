@@ -34,7 +34,7 @@ form['submitButton'].addEventListener('click', (e) => {
         console.log("Logged In")
       })
       .catch((error) => {
-        console.log(error.code);
+        console.log(error.message);
       });
   }
 })

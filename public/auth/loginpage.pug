@@ -6,12 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="loginpage.css">
-    
+    style 
+        include loginpage.css
+
 </head>
 
 <body>
-   
+
     <div id="container">
         <div id="loginDiv">
             <h1>Login</h1>
@@ -20,20 +21,21 @@
                     <input type="email" id="email" placeholder="Enter your email" required>
                     <input type="password" id="pass" placeholder="Enter your password" required>
                     <button type="button" id="submitButton"> Login </button>
-               </form>
-               <a id = "errormsg"></a>
-            </div>
-            <div id="options">
-                <a id = "error"></a>
-                <a id="passwordReset">Forgot Password?</a>
-                <a id="signUpOption">Don't have an account?</a>
-            </div>
+</form>
+<a id = "errormsg"></a>
+    </div>
+    <div id="options">
+        <a id = "error"></a>
+        <a id="passwordReset">Forgot Password?</a>
+        <a id="signUpOption">Don't have an account?</a>
+    </div>
 
         </div>
 
     </div>
-    <script src = "/dist/login.js"></script>
-    
+    script 
+        include /../dist/login.js
+
 </body>
 
 
