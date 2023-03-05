@@ -105,3 +105,4 @@ dist
 
  ./src/service-account-key.json
 ./node_modules
+.history

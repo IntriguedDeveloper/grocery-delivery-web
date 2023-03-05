@@ -1,6 +1,6 @@
 import { initializeApp } from 'firebase/app'
 import { getAuth, onAuthStateChanged, signInWithEmailAndPassword } from 'firebase/auth'
-const firebaseApp = initializeApp({
+const firebaseApp = initializeApp({ //initialize app using firebase config details
   apiKey: "AIzaSyAvyHaaA_uyq20uttPUBjjbMlEnSHXKfzY",
   authDomain: "grocery-deliver-web.firebaseapp.com",
   databaseURL: "https://grocery-deliver-web-default-rtdb.firebaseio.com",
@@ -10,9 +10,9 @@ const firebaseApp = initializeApp({
   appId: "1:105319589520:web:3f1f1ed66cd2edab491a15",
   measurementId: "G-M0DC48G621"
 });
-let isSignedIn = false;
+let isSignedIn = false; //variable to store if user is signed in 
 const auth = getAuth(firebaseApp);
-onAuthStateChanged(auth, user => {
+onAuthStateChanged(auth, user => { //if Auth State has changed then do actions
   if (user != null) {
     isSignedIn = false;
   }
@@ -21,13 +21,13 @@ onAuthStateChanged(auth, user => {
   }
 });
 const form = document.querySelector('#loginForm');
-form['submitButton'].addEventListener('click', (e) => {
+form['submitButton'].addEventListener('click', (e) => { //when submit button is clicked
   const email = form['email'].value;
   const password = form['pass'].value;
   console.log(isSignedIn);
- 
+
   if (!isSignedIn) {
-    signInWithEmailAndPassword(auth, email, password)
+    signInWithEmailAndPassword(auth, email, password) //signInWithEmailandPassword with the given user credentials
       .then((userCredential) => {
         // Signed in 
         const user = userCredential.user;

@@ -1,13 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:ital@1&display=swap');
 
-html, body{ 
+html,
+body {
     min-height: 100vh;
     overflow: auto;
     margin: 0%;
     background-image: url(https://i.ibb.co/XYt8r5t/pots-vegetables-harvest.jpg);
     background-size: cover;
 }
-#container{
+
+#container {
     height: 100vh;
     width: 100%;
     display: flex;
@@ -17,7 +19,7 @@ html, body{
 
 }
 
-#signUpDiv{
+#signUpDiv {
     width: 600px;
     height: 1000px;
     background-color: rgba(0, 219, 222, 0.2);
@@ -28,13 +30,16 @@ html, body{
     border-radius: 5px;
     row-gap: 30px;
 }
-#signUpDiv h1{
-    font-family:'Shantell Sans', cursive; ;
+
+#signUpDiv h1 {
+    font-family: 'Shantell Sans', cursive;
+    ;
     font-size: 50px;
     color: antiquewhite;
     margin: 0;
 }
-#FormDiv{
+
+#FormDiv {
     width: max-content;
     height: max-content;
     display: flex;
@@ -44,7 +49,7 @@ html, body{
     text-align: center;
 }
 
-#sign *{
+#sign * {
     display: block;
     margin-top: 20px;
     width: 300px;
@@ -52,6 +57,7 @@ html, body{
     border-radius: 3px;
     border: none;
 }
+
 #sign form {
     width: 100%;
     display: flex;
@@ -60,50 +66,62 @@ html, body{
     align-items: stretch;
     justify-content: center;
 }
-#sign form input{
+
+#sign form input {
     height: 30px;
     border-radius: 3px;
     border: none;
 }
-#signUpButton{
+
+#signUpButton {
     border-radius: 5px;
-    color:rgb(79, 64, 46);
+    color: rgb(79, 64, 46);
     background-color: rgb(206, 206, 179);
-    height : 30px;
-    border:none;
+    height: 30px;
+    border: none;
     font-size: medium;
     font-weight: 200;
-    font-family: 'Shantell Sans', cursive;;
+    font-family: 'Shantell Sans', cursive;
+    ;
 }
-#signUpButton:hover{
+
+#signUpButton:hover {
     background-color: rgb(174, 174, 154);
-    cursor : pointer;
+    cursor: pointer;
     border: none;
 }
-#signUpButton:active{
+
+#signUpButton:active {
     background-color: rgb(206, 206, 179);
     border: none;
 }
-#signUpButton:visited{
-    background-color:rgb(206, 206, 179);
+
+#signUpButton:visited {
+    background-color: rgb(206, 206, 179);
     border: none;
 }
-#options{
+
+#options {
     margin: 0%;
     padding: 0%;
 }
-#options *{
+
+#options * {
     display: block;
-    font-family: 'Shantell Sans',cursive;;
+    font-family: 'Shantell Sans', cursive;
+    ;
     color: rgb(206, 206, 179);
 }
-#options *:hover{
+
+#options *:hover {
     cursor: pointer;
     color: aliceblue;
 }
-#errormsg{
-    
-    margin-top : 10px;
-    font-family: 'Shantell Sans',cursive;;
+
+#errormsg {
+
+    margin-top: 10px;
+    font-family: 'Shantell Sans', cursive;
+    ;
     color: rgb(206, 206, 179);
 }

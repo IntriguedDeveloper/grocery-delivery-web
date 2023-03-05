@@ -20,7 +20,7 @@ body {
     justify-content: space-between;
 }
 
-#adminLoginDiv{
+#adminLoginDiv {
     width: 600px;
     height: 100vh;
     background-color: rgba(0, 219, 222, 0.2);
@@ -33,12 +33,14 @@ body {
     row-gap: 30px;
 }
 
-#adminLoginDiv h1{
-    font-family:'Shantell Sans', cursive; ;
+#adminLoginDiv h1 {
+    font-family: 'Shantell Sans', cursive;
+    ;
     font-size: 50px;
     color: antiquewhite;
     margin: 0;
 }
+
 #adminLoginDiv form {
     width: 300px;
     display: flex;
@@ -47,28 +49,34 @@ body {
     align-items: stsubmit;
     justify-content: center;
 }
-#adminLoginDiv form input{
+
+#adminLoginDiv form input {
     height: 30px;
     border-radius: 3px;
-    border : none;
+    border: none;
 }
-#submit{
+
+#submit {
     border-radius: 5px;
-    color:rgb(79, 64, 46);
+    color: rgb(79, 64, 46);
     background-color: rgb(206, 206, 179);
-    height : 30px;
-    border:none;
+    height: 30px;
+    border: none;
     font-size: medium;
     font-weight: 200;
-    font-family: 'Shantell Sans', cursive;;
+    font-family: 'Shantell Sans', cursive;
+    ;
 }
-#submit:hover{
+
+#submit:hover {
     background-color: rgb(174, 174, 154);
-    cursor : pointer;
+    cursor: pointer;
 }
-#submit:active{
+
+#submit:active {
     background-color: rgb(206, 206, 179);
 }
-#submit:visited{
-    background-color:rgb(206, 206, 179);
+
+#submit:visited {
+    background-color: rgb(206, 206, 179);
 }
