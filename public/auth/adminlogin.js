@@ -25,7 +25,7 @@ adminloginform['submit'].addEventListener('click', (e) => { //action when submit
                 },
                 body: JSON.stringify({ idToken: idToken }),
             }
-            fetch('/adminlogin', options).then(response => response.json()).then(data => {
+            fetch('/auth/adminlogin', options).then(response => response.json()).then(data => {
                 console.log(data);
                 console.log(idToken);
             });

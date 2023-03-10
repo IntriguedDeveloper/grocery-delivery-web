@@ -25,7 +25,7 @@ adminForm['submitButton'].addEventListener('click', (e) => { //when submit butto
                 },
                 body: JSON.stringify({ idToken: idToken }), //transform the JWT to JSON string
             }
-            fetch('/adminsignup', options).then(response => response.json()).then(data => { //make a post request to the server to set admin custom claims to true to give admin access to the specific user
+            fetch('/auth/adminsignup', options).then(response => response.json()).then(data => { //make a post request to the server to set admin custom claims to true to give admin access to the specific user
                 console.log(data);
             })
         })

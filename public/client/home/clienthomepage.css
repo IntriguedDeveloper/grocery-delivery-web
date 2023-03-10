@@ -1,0 +1,127 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: visible;
+    overflow-y: visible;
+    height: 100vh;
+    
+}
+
+
+
+#navBar {
+    background-color: rgb(206, 163, 163);
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    justify-content: center;
+    align-items: center;
+    width:auto;
+    height: 75px;
+    column-gap: 20px;
+    flex-wrap: nowrap;
+    position: sticky;
+    margin: 0;
+    padding-left:20px;
+    padding-right:20px;
+    overflow-y : visible;
+}
+
+#brandName {
+
+    font-size: larger;
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Old versions of Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+   
+}
+
+#brandName:hover {
+    cursor: pointer;
+}
+
+
+#searchBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: max-content;
+    flex:1;
+    
+}
+#searchBox #searchBoxField {
+    width:inherit;
+    border-radius: 3px;
+    border: none;
+    height: 30px;
+    flex:1;
+}
+#searchButton{
+    background-image: url('https://i.ibb.co/DDXnWfw/21339512171645479140-128.png');
+    background-size:30px;
+    background-repeat: no-repeat;
+    height: 30px;
+    width: 30px;
+    
+}
+#searchButton:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+#shoppingCart{
+    font-size: 24px;
+}
+#profileIcon{
+    font-size: 24px;
+}
+#navMenuContainer{
+    display: block;
+    height:max-content;
+    width: max-content;
+}
+#menuButton{
+    font-size: 22px;
+}
+#menuButton:hover{
+    cursor: pointer;
+}
+
+#menuButtonDiv{
+    height: calc(100vh - 75px);
+    left:0;
+    position: absolute;
+    top:75px;
+    background-color: rgb(206, 163, 163);
+    margin: 0;
+    display: block;
+    transition: 0.5s;
+    overflow-x: hidden;
+    z-index: 1;
+}
+#navBar-items{
+    margin:0;
+    width:100%;
+}
+#navBar-items div{
+    height:50px;
+    width:100%;
+    border: 0.2px black;
+    border-style:solid;
+    border-right: none;
+    border-top: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: medium;
+    text-decoration: none;
+    transition:0.3s;
+    white-space: nowrap;
+}

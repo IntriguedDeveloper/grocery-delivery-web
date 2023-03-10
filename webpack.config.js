@@ -7,7 +7,8 @@ module.exports = {
         login : './public/auth/loginpage.js',
         signup : './public/auth/signuppage.js',
         adminSignUp: './src/views/adminSignUp.js',
-        adminlogin : './public/auth/adminlogin.js'
+        adminlogin : './public/auth/adminlogin.js',
+        forgotpassword : './public/auth/forgotpassword.js',
     },
     output: {
         filename : '[name].js',
